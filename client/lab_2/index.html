@@ -2,52 +2,73 @@
 <html>
     <head>
         <title>David Ye Lab 2: CSS 1 Selectors: Attaching CSS to HTML</title>
-        <h1>David Ye Lab 2: CSS Selectors</h1>
+        <link rel = 'stylesheet' href = 'styles.css'/>
+        <h1 class = 'wrapper header'>David Ye Lab 2: CSS Selectors</h1>
     </head>
 
     <body>
-        <h2>First, the basics.</h2>
-        <p>You need the following to build your website.</p>
+        <nav><a href = 'selectors.html' target = "_blank">Selectors</a>
+        <a href = 'index.html' target = "_blank">Main page</a></nav>
+
+        <div class = 'container'>
+        <h2 class = 'subtitle'>First, the basics.</h2>
+
+        <p class = 'default'>You need the following to build your website.</p>
+        
+    <div class = 'section_1'>
         <ul>
             <li>HTML and CSS</li>
             <li>Javascript</li>
             <li>Node.js</li>
             <li>And other web development frameworks</li>
         </ul>
-
+        
         <p>My top 3 goals for this class are:</p>
         <ol>
             <li>To learn more about HTML, CSS, and Javascript</li>
             <li>Learn more about web development frameworks</li>
             <li>At the end of this class I would like to create a webpage profile about myself from scratch</li>
         </ol>
+    </div>
 
+    <div class = 'section_2'>
         <h2>Let's Try Some Inline Elements</h2>
         <p>Sometimes you want to <em>draw attention to something</em>
         in a line of text.</p>
         <p>Sometimes you want to <strong>strongly emphasize something</strong>
         in the text.</p>
         <p>Sometimes you want to <em><strong>do both</strong></em>.</p>
+    </div>
+        </div>
 
+    <div class = 'section_3 subtitle'>
         <h2>Empty Elements</h2>
         <p>Soft line breaks can't wrap anything.
-        <br>Neither can image tags, or hard lines.</br></p>
-        <p>Add a hard line under here, and break the previous two lines
+        <br>Neither can image tags, or hard lines.</br>
+        Add a hard line under here, and break the previous two lines
         using a soft line break.</p>
         <hr/>
-
-        <h2>Images</h2>
+    </div>
+        
+        <div class = 'section_4'>
+        <div class = 'text'>
+        <h2 class = 'subtitle'>Images</h2>
         <p>Include the four images from the links and images tutorial below.</p>
         <p>Don't forget to use alt text on your images. It's important for accessibility.</p>
-
+        </div>
+        <div class = 'grid'>
         <img src = 'images/mochi.jpg' alt = 'A mochi ball in a bubble'/>
         <img src = 'images/mochi.png' alt = 'A mochi ball'/>
         <img src = 'images/mochi.svg' alt = 'A mochi ball with Bezier handles'/>
         <img src = 'images/mochi.gif' alt = 'A dancing mochi ball'/>
+        </div>
+        </div>
 
+    <div class = 'footer'>
         <hr/>
         <p>My GitHub repository <a href = 'https://github.com/David-Ye1/INST377-Lab-Work'
         target = '_blank'>David Ye GitHub</a>.</p>
         <p>If you want your repo to be private, be sure to invite Prof A as a "collaborator."</p>
+    </div>
     </body>
 </html>
