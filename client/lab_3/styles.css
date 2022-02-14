@@ -1,1 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.wrapper {
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    margin:0;
+  }
+
+.header{
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(0,139, 139,0.8);
+    padding: 10px 15px;
+    margin: 0;
+  }
+
+.menu-container{
+    color: #fff;
+    background-color: #5995DA; /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+.menu{
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.menu2{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+      border: 1px solid #fff;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+.main-page{
+    margin-left: 20px;
+}
+
+.header-container{
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header-use{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo-grid-item{
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.group, .github{
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    border: 1px solid #fff;
+    background-color: #D6E0FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-three{
+    flex: 2;
+}
+
+.footer-one, .footer-three{
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+}
+
+.database-demo{
+    margin-left: auto;
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 961px){
+    .first-item{
+        order: -2;
+    }
+
+    .last-item{
+        order: 1;
+    }
+  }
+  
