@@ -1,19 +1,63 @@
-YOUR NAME Lab 4: HTML Forms
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = 'UTF-8'/>
+        <meta name = 'viewpoint' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title>Lab 4 - Javascript 1: Browser Events & Selectors - Click to Move</title>
+        <link rel = 'stylesheet' href = 'styles.css'/>
+        <h1 class = 'wrapper header'>David Ye Lab 4: Browser Events & Selectors</h1>
+    </head>
+    <body>
+        <div class = 'menu-container'>
+            <div class = 'menu'>
+                <div class = 'date'>Feb 19, 2022</div>
+            <div class = 'menu2'>
+                <div class = 'database-demo'><a href = 'data.html' target = '_blank'>Database Demos</a></div>
+                <div class = 'main-page'><a href = 'index.html' target = '_blank'>Main Page</a></div>
+            </div>
+            </div>
+        </div>
 
-today's date
-Database Demos
-Main Page
+        <div class = 'header-container'>
+            <div class = 'header-use'>
+                <div class = 'group'>Group Project Link (no site yet)</div>
+                <div class = 'logo'><img src = 'images/awesome-logo.svg'/></div>
+                <div class = 'github'><a href = 'https://github.com/David-Ye1/INST377-Lab-Work' target = '_blank'>My Github</a></div>
+            </div>
+        </div>
+        
+        <div class = 'photo-grid-container'>
+            <div class = 'carousel_actions'>
+                <button id = 'carousel_button-prev'>Prev</button>
+            </div>
+            <div class = 'carousel'>
+                <div class = 'carousel_item carousel_item-visible'>
+                    <img src = 'images/one.svg'/>
+                </div>
+                <div class = 'carousel_item'>
+                    <img src = 'images/two.svg'/>
+                </div>
+                <div class = 'carousel_item'>
+                    <img src = 'images/three.svg'/>
+                </div>
+                <div class = 'carousel_item'>
+                    <img src = 'images/four.svg'/>
+                </div>
+                <div class = 'carousel_item'>
+                    <img src = 'images/five.svg'/>
+                </div>
+            </div>
+            <div class = 'carousel_actions'>
+                <button id = 'carousel_button-next'>Next</button>
+            </div>
+        </div>
 
-Group Project Link (no site yet)
-Awesome Logo
-Github Link
+        <script src = 'script.js'></script>
 
-image_1
-image_2
-image_3
-image_4
-image_5
-
-footer item 1
-footer item 2
-footer item 3
+        <div class = 'footer'>
+            <div class = 'footer-item footer-one'>Footer Item 1</div>
+            <div class = 'footer-item footer-two'>Footer Item 2</div>
+            <div class = 'footer-item footer-three'>Footer Item 3</div>
+        </div>
+    </body>
+</html>
