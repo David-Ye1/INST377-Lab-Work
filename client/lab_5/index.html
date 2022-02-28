@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = 'UTF-8'/>
+        <meta name = 'viewpoint' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title>Lab 5 - HTML Forms, CSS Frameworks, HTTP Methods</title>
+        <link rel = 'stylesheet' href = 'styles.css'/>
+    </head>
+
+    <body>
+        <header class = 'header'>
+            <h1>David Ye's Lab 5</h1>
+        </header>
+       
+        <div class = 'menu-container'>
+        <div class = 'place-holder-container'>
+        <form action = '' method = 'get' class = 'reader-form'>
+            <div class = 'form-row'>
+                <label for = 'full-name'><strong>First Name</strong></label>
+                <input id = 'full-name' name = 'full-name' type = 'text'></textarea>
+            </div>
+
+            <div class = 'form-row'>
+                <label for = 'food'><strong>Food Preference</strong></label>
+                <input id = 'food' name = 'food' type = 'text'></textarea> 
+            </div>
+
+            <fieldset class = 'legacy-row'>
+                <legend><strong>Veggie or Vegan?</strong></legend>
+                <label for = 'food-type-1' class = 'radio-label'>Yes</label>
+                <input id = 'food-type-1' name = 'food-type' type = 'radio' value = 'yes'/>
+
+                <label for = 'food-type-2' class = 'radio-label'>No</label>
+                <input id = 'food-type-2' name = 'food-type' type = 'radio' value = 'no'/>
+            </fieldset>
+
+            <div class = 'form-row'>
+                <button>Submit</button>
+            </div>
+        </form>
+        </div>
+        <div class = 'place-holder-container-2'>
+            <p>This is going to be something in two weeks.</p>
+        </div>
+        </div>
+        
+        <script src = 'script.js'></script>
+    </body>
+</html>

@@ -25,3 +25,104 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
+
+.header {
+  text-align: flex-start;
+  background-color: yellow;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  justify-content: center;
+
+  width: 90%;
+  margin: 50px;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.form-row input[type = 'text'] {
+  width: 200px;
+  height: 30px;
+  margin-top: 13px;
+}
+
+.legacy-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-row legend {
+  margin-bottom: 15px;
+}
+
+.legacy-row .radio-label {
+  display: block;
+  font-size: 15px;
+  padding: 0 20px 0 0;
+}
+
+.legacy-row input[type = 'radio'] {
+  margin-top: 1px;
+  margin-left: -15px; 
+}
+
+.legacy-row .radio-label,
+.legacy-row input[type = 'radio'] {
+  float: left;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.place-holder-container{
+  background-color: white;
+  padding: 50px;
+  float: left;
+  border-radius: 3px;
+  margin-left: 150px;
+  margin-top: -30px;
+
+  width: 300px;
+  height: 380px;
+}
+
+.place-holder-container-2{
+  background-color: white;
+  padding: 35px;
+  float: right;
+  border-radius: 3px;
+  margin: 50px;
+  text-align: flex-start;
+
+  width: 48%;
+  height: 25px;
+}
+
+.form-row button {
+  font-size: 16px;
+
+  color: white;
+  background-color: green;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 20px 40px;
+  cursor: pointer;
+  margin-top: -15px;
+}
+
+.form-row button:active {
+  background-color: transparent;
+}
