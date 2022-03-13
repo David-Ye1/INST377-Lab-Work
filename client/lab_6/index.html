@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset = 'UTF-8'/>
+        <meta name = 'viewpoint' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title>Lab 6 - Handling JSON Responses from REST-ful APIs</title>
+        <link rel = 'stylesheet' href = 'styles.css'/>
+    </head>
+
+    <body>
+        <header class = 'header'>
+            <h1>David Ye's Lab 6</h1>
+        </header>
+        
+        <div class = 'columns'>
+            <div class = 'place-holder-container'>
+        <form action = "https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" method = 'get' class = 'reader-form'>
+            <div class = 'form-row'>
+                <label for = 'full-name'><strong>First Name</strong></label>
+                <input id = 'full-name' name = 'full-name' type = 'text'></textarea>
+            </div>
+
+            <div class = 'form-row'>
+                <label for = 'food'><strong>Food Preference</strong></label>
+                <input id = 'food' name = 'food' type = 'text'></textarea> 
+            </div>
+
+            <fieldset class = 'legacy-row'>
+                <legend><strong>Veggie or Vegan?</strong></legend>
+                <label for = 'food-type-1' class = 'radio-label'>Yes</label>
+                <input id = 'food-type-1' name = 'food-type' type = 'radio' value = 'yes'/>
+
+                <label for = 'food-type-2' class = 'radio-label'>No</label>
+                <input id = 'food-type-2' name = 'food-type' type = 'radio' value = 'no'/>
+            </fieldset>
+
+            <div class = 'form-row'>
+                <button class = "submit_button" type = "submit">Submit</button>
+            </div>
+        </form>
+        </div>
+        
+            <div class = 'place-holder-container-2'>
+                <h2>Restaurants List</h2>
+                <ul class = 'resto-list'></ul>
+            </div>
+        </div>
+        
+        <script src = 'script.js'></script>
+    </body>
+</html>
