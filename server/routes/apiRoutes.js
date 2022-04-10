@@ -4,6 +4,8 @@ import sequelize from 'sequelize';
 import chalk from 'chalk';
 import fetch from 'node-fetch';
 
+// import foodServicesRoutes from './foodServicesRoutes.js';
+
 import db from '../database/initializeDB.js';
 import hallIdQuery from '../controllers/diningHall.js';
 
@@ -15,6 +17,9 @@ router.get('/', (req, res) => {
   res.json({message: 'Welcome to the UMD Dining API!'});
   // res.send('Welcome to the UMD Dining API!');
 });
+
+/* Prof A subrouter inclusion demo */
+// router.use('/foodServicesPG', foodServicesRoutes);
 
 // /////////////////////////////////
 // Food Inspection Set Demos
@@ -76,6 +81,27 @@ router.route('/sqlDemo')
       res.send({message: 'Something went wrong on the SQL request'});
     }
   });
+
+/*
+router.route('/foodServicesPG/:id')
+  .get(async(req, res) => {
+    try {
+      // + req.params.id
+      // if id is not a number return
+      const {id} = req.params;
+      const url = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
+      const data = await fetch(url);
+      const json = await data.json();
+      console.log(json);
+
+      res.json({data: json[id]});
+    } catch (err) {
+      console.log(err);
+      // res.json({err: err});
+      res.json({message: 'something went wrong'});
+    }
+  });
+  */
 
 // /////////////////////////////////
 // ////WholeMeal demos////////
